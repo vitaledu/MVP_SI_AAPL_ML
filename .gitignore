@@ -1,0 +1,8 @@
+# Ignorar pasta __pycache__
+__pycache__
+
+# Ignorar pasta env
+env/
+
+# Ignorar pasta log
+log/
