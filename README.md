@@ -37,6 +37,8 @@ python.exe -m pip install --upgrade pip
 
 flask run --host 0.0.0.0 --port 5000 --reload
 
+```
+
 Após a execução da API, acesse os dados da análise por meio da interface disponibilizada.
 
 ## Detalhes do Projeto
