@@ -38,11 +38,6 @@ class Model:
         # Faremos o reshape para que o modelo entenda que estamos passando
         X_input = X_input.reshape(1, -1)
 
-        # Padronização nos dados de entrada usando o scaler utilizado em X_train
-        #X_input_scaled = model.scaler.transform(X_input)
-
-        
-
         # Verificando se o modelo possui um scaler atribuído
         if hasattr(model, 'scaler') and model.scaler is not None:
             # Padronização nos dados de entrada usando o scaler utilizado em X_train

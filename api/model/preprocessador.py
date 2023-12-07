@@ -4,9 +4,6 @@ class PreProcessador:
 
     def pre_processar(self, dataset, percentual_teste, seed=7):
         """ Cuida de todo o pré-processamento. """
-        # limpeza dos dados e eliminação de outliers
-
-        # feature selection
 
         # divisão em treino e teste
         X_train, X_test, Y_train, Y_test = self.__preparar_holdout(
