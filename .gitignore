@@ -6,3 +6,8 @@ env/
 
 # Ignorar pasta log
 log/
+
+# Ignorar pycache de model e schema
+
+model/__pycache__/
+schemas/__pycache__/
