@@ -25,17 +25,31 @@ dataset = carregador.carregar_dados(url_dados, colunas)
 
 
 def normalize(value):
-    if value > 321904084:
+    if value > 400623065:
         return 1
     else:
         return 0
 
 
 # Separando em dados de entrada e saída
-X = dataset.iloc[:, 1:6]
-Y = dataset.iloc[:, 6]
+X = dataset.iloc[:, 1:5]
+Y = dataset.iloc[:, 5]
 
-y = y.astype(float)
+Y = Y.astype(float)
+
+print("Valores de entrada X:")
+print(X)
+
+print("\nValores de saída y:")
+print(Y)
+
+with open('database/AAPL.csv', 'r') as file:
+    for _ in range(5):  # Exibir as primeiras 5 linhas
+        print(file.readline())
+
+print(dataset.info())  # Verificar informações do DataFrame
+print(dataset.describe())  # Resumo estatístico do DataFrame
+
 
 
 # Método para testar o modelo de Regressão Logística a partir do arquivo correspondente

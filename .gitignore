@@ -11,3 +11,8 @@ log/
 
 model/__pycache__/
 schemas/__pycache__/
+.pytest_cache/
+
+#Ignorar banco
+
+database/acoes.sqlite3

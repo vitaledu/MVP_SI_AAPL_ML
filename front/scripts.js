@@ -16,6 +16,7 @@ const getList = async () => {
         item.open,
         item.high,
         item.low,
+        item.close,
         item.adjclose,
         item.volume,
       ))
@@ -130,14 +131,14 @@ const newItem = async () => {
     isNaN(inputOpen) ||
     isNaN(inputHigh) ||
     isNaN(inputLow) ||
-    isNaN(inputAdjClose) ||
-    isNaN(inputClose)
+    isNaN(inputClose) ||
+    isNaN(inputAdjClose)
   ) {
     alert("Esses campos precisam ser números!");
   } else {
     // Se todos os campos são números, continua com a inserção do item
-    insertList(inputOpen, inputHigh, inputLow, inputAdjClose, inputClose);
-    postItem(inputOpen, inputHigh, inputLow, inputAdjClose, inputClose);
+    insertList(inputOpen, inputHigh, inputLow, inputClose, inputAdjClose);
+    postItem(inputOpen, inputHigh, inputLow, inputClose, inputAdjClose);
     alert("Item adicionado!");
   }
 };
@@ -149,8 +150,8 @@ const newItem = async () => {
   Função para inserir items na lista apresentada
   --------------------------------------------------------------------------------------
 */
-const insertList = (Id, Open, High, Low, AdjClose, Volume) => {
-  var item = [Id, Open, High, Low, AdjClose, Volume];
+const insertList = (Id, Open, High, Low, Close, AdjClose, Volume) => {
+  var item = [Id, Open, High, Low, Close, AdjClose, Volume];
   var table = document.getElementById('myTable');
   var row = table.insertRow();
 
