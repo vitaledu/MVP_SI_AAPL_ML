@@ -188,3 +188,5 @@ def delete_acao(query: AcaoBuscaSchema):
         session.commit()
         logger.debug(f"Deletado negociação #{acao_id}")
         return {"message": f"Negociação {acao_id} removida com sucesso!"}, 200
+    
+

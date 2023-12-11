@@ -30,6 +30,9 @@ def normalize(value):
     else:
         return 0
 
+# Remove as linhas com valores NaN
+dataset = dataset.dropna()
+
 
 # Separando em dados de entrada e saída
 X = dataset.iloc[:, 1:5]
