@@ -61,4 +61,4 @@ Para uma análise mais aprofundada dos dados, consulte o Notebook no Google Cola
 
 ### Vídeo Explicativo
 
-https://colab.research.google.com/drive/1NqtvQaRfjHJD87FLDo1mWzfWWJOLUvP9?usp=sharing
+https://www.youtube.com/watch?v=ZdF0IBCthzo
